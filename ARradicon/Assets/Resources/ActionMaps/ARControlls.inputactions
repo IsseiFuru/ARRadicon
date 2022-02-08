@@ -1,0 +1,34 @@
+{
+    "name": "ARControlls",
+    "maps": [
+        {
+            "name": "ARActions",
+            "id": "dfa6512d-71f8-4ebf-99c5-e79cd093fbcd",
+            "actions": [
+                {
+                    "name": "Touch",
+                    "type": "Value",
+                    "id": "0e41d1b4-5a33-484a-86af-698160b3416f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b3f248ab-8bef-49ec-badb-9af4ff74e037",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

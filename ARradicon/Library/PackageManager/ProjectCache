@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637795877310000000
-    m_Hash: 4128734247
+      ticks: 637795909740000000
+    m_Hash: 1761123458
   m_LockFileStatus:
     m_FilePath: /Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637795877310000000
-    m_Hash: 4178304981
+      ticks: 637795909740000000
+    m_Hash: 1395522753
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -1419,6 +1419,214 @@ m_PackageAssets:
         isAllowed: 1
       isAssetStorePackage: 0
       datePublishedTicks: 637781298980000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
+        revision: 2094ce3ed076044be0e3a742424fd720dfd838ce
+        path: 
+    - packageId: com.unity.xr.arkit-face-tracking@4.1.9
+      testable: 0
+      isDirectDependency: 1
+      version: 4.1.9
+      source: 1
+      resolvedPath: /Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Library/PackageCache/com.unity.xr.arkit-face-tracking@4.1.9
+      assetPath: Packages/com.unity.xr.arkit-face-tracking
+      name: com.unity.xr.arkit-face-tracking
+      displayName: ARKit Face Tracking
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: "Support for face tracking on ARKit.\n\nIncludes support for:
+        \n\u25AA Face pose tracking \n\u25AA Blendshapes \n\nNote: Only supported
+        on devices with a forward-facing depth camera, like the iPhone X"
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview.4
+        - 1.0.0-preview.6
+        - 1.0.1
+        - 1.0.2
+        - 1.0.7
+        - 1.0.8
+        - 1.0.9
+        - 1.0.11
+        - 1.0.13
+        - 1.0.14
+        - 1.1.0-preview.1
+        - 1.1.0-preview.2
+        - 1.1.0-preview.3
+        - 1.1.0-preview.4
+        - 1.1.0-preview.5
+        - 1.1.0-preview.6
+        - 3.0.0-preview.1
+        - 3.0.0-preview.2
+        - 3.0.0-preview.3
+        - 3.0.0-preview.4
+        - 3.0.1
+        - 3.1.0-preview.1
+        - 3.1.0-preview.2
+        - 3.1.0-preview.4
+        - 3.1.0-preview.6
+        - 3.1.0-preview.7
+        - 3.1.0-preview.8
+        - 3.1.3
+        - 3.1.6
+        - 3.1.7
+        - 3.1.10
+        - 4.0.0-preview.1
+        - 4.0.0-preview.3
+        - 4.0.1
+        - 4.0.2
+        - 4.0.8
+        - 4.0.9
+        - 4.0.10
+        - 4.0.12
+        - 4.1.0-preview.1
+        - 4.1.0-preview.2
+        - 4.1.0-preview.3
+        - 4.1.0-preview.5
+        - 4.1.0-preview.6
+        - 4.1.0-preview.7
+        - 4.1.0-preview.9
+        - 4.1.0-preview.10
+        - 4.1.0-preview.11
+        - 4.1.0-preview.12
+        - 4.1.0-preview.13
+        - 4.1.1
+        - 4.1.3
+        - 4.1.5
+        - 4.1.7
+        - 4.1.9
+        - 4.2.0-pre.2
+        - 4.2.0-pre.3
+        - 4.2.0-pre.4
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
+        - 4.2.0-pre.10
+        - 4.2.0-pre.12
+        - 4.2.0
+        - 4.2.1
+        - 4.2.2
+        - 5.0.0-pre.5
+        - 5.0.0-pre.6
+        - 5.0.0-pre.7
+        compatible:
+        - 1.0.0-preview.4
+        - 1.0.0-preview.6
+        - 1.0.1
+        - 1.0.2
+        - 1.0.7
+        - 1.0.8
+        - 1.0.9
+        - 1.0.11
+        - 1.0.13
+        - 1.0.14
+        - 1.1.0-preview.1
+        - 1.1.0-preview.2
+        - 1.1.0-preview.3
+        - 1.1.0-preview.4
+        - 1.1.0-preview.5
+        - 1.1.0-preview.6
+        - 3.0.0-preview.1
+        - 3.0.0-preview.2
+        - 3.0.0-preview.3
+        - 3.0.0-preview.4
+        - 3.0.1
+        - 3.1.0-preview.1
+        - 3.1.0-preview.2
+        - 3.1.0-preview.4
+        - 3.1.0-preview.6
+        - 3.1.0-preview.7
+        - 3.1.0-preview.8
+        - 3.1.3
+        - 3.1.6
+        - 3.1.7
+        - 3.1.10
+        - 4.0.0-preview.1
+        - 4.0.0-preview.3
+        - 4.0.1
+        - 4.0.2
+        - 4.0.8
+        - 4.0.9
+        - 4.0.10
+        - 4.0.12
+        - 4.1.0-preview.1
+        - 4.1.0-preview.2
+        - 4.1.0-preview.3
+        - 4.1.0-preview.5
+        - 4.1.0-preview.6
+        - 4.1.0-preview.7
+        - 4.1.0-preview.9
+        - 4.1.0-preview.10
+        - 4.1.0-preview.11
+        - 4.1.0-preview.12
+        - 4.1.0-preview.13
+        - 4.1.1
+        - 4.1.3
+        - 4.1.5
+        - 4.1.7
+        - 4.1.9
+        - 4.2.0-pre.2
+        - 4.2.0-pre.3
+        - 4.2.0-pre.4
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
+        - 4.2.0-pre.10
+        - 4.2.0-pre.12
+        - 4.2.0
+        - 4.2.1
+        - 4.2.2
+        verified: 4.1.9
+      dependencies:
+      - name: com.unity.xr.arkit
+        version: 4.1.9
+      - name: com.unity.xr.arsubsystems
+        version: 4.1.9
+      resolvedDependencies:
+      - name: com.unity.xr.arkit
+        version: 4.1.9
+      - name: com.unity.editorcoroutines
+        version: 1.0.0
+      - name: com.unity.xr.arsubsystems
+        version: 4.1.9
+      - name: com.unity.subsystemregistration
+        version: 1.1.0
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.xr.management
+        version: 4.0.7
+      - name: com.unity.modules.vr
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.xr
+        version: 1.0.0
+      - name: com.unity.xr.legacyinputhelpers
+        version: 2.1.8
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637781299010000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -3735,70 +3943,6 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
         revision: ed3b32c709a0e51cf73fda4b200c59b48955c4be
         path: 
-    - packageId: com.unity.editorcoroutines@1.0.0
-      testable: 0
-      isDirectDependency: 0
-      version: 1.0.0
-      source: 1
-      resolvedPath: /Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Library/PackageCache/com.unity.editorcoroutines@1.0.0
-      assetPath: Packages/com.unity.editorcoroutines
-      name: com.unity.editorcoroutines
-      displayName: Editor Coroutines
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: 'The editor coroutines package allows developers to start constructs
-        similar to Unity''s monobehaviour based coroutines within the editor using
-        abitrary objects. '
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 0.0.1-preview.3
-        - 0.0.1-preview.4
-        - 0.0.1-preview.5
-        - 0.0.2-preview.1
-        - 0.1.0-preview.1
-        - 0.1.0-preview.2
-        - 1.0.0
-        compatible:
-        - 0.0.1-preview.3
-        - 0.0.1-preview.4
-        - 0.0.1-preview.5
-        - 0.0.2-preview.1
-        - 0.1.0-preview.1
-        - 0.1.0-preview.2
-        - 1.0.0
-        verified: 1.0.0
-      dependencies: []
-      resolvedDependencies: []
-      keywords:
-      - coroutine
-      - coroutines
-      - editor
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637232611380000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/com.unity.editorcoroutines.git
-        revision: f67fc9992bbc7a553b17375de53a8b2db136528e
-        path: 
     - packageId: com.unity.xr.arsubsystems@4.1.9
       testable: 0
       isDirectDependency: 0
@@ -3937,6 +4081,70 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
         revision: 2094ce3ed076044be0e3a742424fd720dfd838ce
+        path: 
+    - packageId: com.unity.editorcoroutines@1.0.0
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.0
+      source: 1
+      resolvedPath: /Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Library/PackageCache/com.unity.editorcoroutines@1.0.0
+      assetPath: Packages/com.unity.editorcoroutines
+      name: com.unity.editorcoroutines
+      displayName: Editor Coroutines
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'The editor coroutines package allows developers to start constructs
+        similar to Unity''s monobehaviour based coroutines within the editor using
+        abitrary objects. '
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.1-preview.3
+        - 0.0.1-preview.4
+        - 0.0.1-preview.5
+        - 0.0.2-preview.1
+        - 0.1.0-preview.1
+        - 0.1.0-preview.2
+        - 1.0.0
+        compatible:
+        - 0.0.1-preview.3
+        - 0.0.1-preview.4
+        - 0.0.1-preview.5
+        - 0.0.2-preview.1
+        - 0.1.0-preview.1
+        - 0.1.0-preview.2
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - coroutine
+      - coroutines
+      - editor
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637232611380000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.editorcoroutines.git
+        revision: f67fc9992bbc7a553b17375de53a8b2db136528e
         path: 
     - packageId: com.unity.ext.nunit@1.0.6
       testable: 0
