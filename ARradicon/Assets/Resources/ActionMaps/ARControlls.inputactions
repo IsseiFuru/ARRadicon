@@ -28,6 +28,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Car",
+            "id": "5db21d75-ec8e-4684-892f-b01b415155ad",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "5bd9e4b5-8b42-48fc-adc2-1fa471aff204",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e1d1cef2-fcc1-46f6-a5be-3a109d6c5743",
+                    "path": "/<GamePad>/LeftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

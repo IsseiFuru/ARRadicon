@@ -246,6 +246,8 @@ GameObject:
   - component: {fileID: 4539661262775328}
   - component: {fileID: 205659240027242542}
   - component: {fileID: 4551854775039612055}
+  - component: {fileID: -2921068226977875117}
+  - component: {fileID: 3133418425233460443}
   m_Layer: 0
   m_Name: SportCar20_Static_EU
   m_TagString: Untagged
@@ -347,7 +349,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094918606176732}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 375
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -355,6 +357,135 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-2921068226977875117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094918606176732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6233ab0f691014592888a2354246611f, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3133418425233460443}
+        m_TargetAssemblyTypeName: ARradicon.Car, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 809550fc-51b7-4ef9-bc54-4182591b847f
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aaad2f25-e297-412c-bd63-f55d56d25add
+    m_ActionName: Player/Look[/Mouse/delta,/Pen/delta,/Simulated Touchscreen/delta]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f210bf6c-09de-476d-af5b-ddf9cef2fb54
+    m_ActionName: Player/Fire[/Mouse/leftButton,/Simulated Touchscreen/primaryTouch/tap]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c02c92f5-14af-4883-82f0-7838c63a3868
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 06b328ff-8958-4db9-9b6e-641fdef971f2
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 449c8368-718c-4788-ab3d-e406c6e28251
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3e28c654-e69d-4854-bbe7-5ff29c203b75
+    m_ActionName: UI/Point[/Mouse/position,/Pen/position,/Simulated Touchscreen/touch0/position,/Simulated
+      Touchscreen/touch1/position,/Simulated Touchscreen/touch2/position,/Simulated
+      Touchscreen/touch3/position,/Simulated Touchscreen/touch4/position,/Simulated
+      Touchscreen/touch5/position,/Simulated Touchscreen/touch6/position,/Simulated
+      Touchscreen/touch7/position,/Simulated Touchscreen/touch8/position,/Simulated
+      Touchscreen/touch9/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fdedf1aa-f08a-447a-9eb9-9e600d73e550
+    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip,/Simulated Touchscreen/touch0/press,/Simulated
+      Touchscreen/touch1/press,/Simulated Touchscreen/touch2/press,/Simulated Touchscreen/touch3/press,/Simulated
+      Touchscreen/touch4/press,/Simulated Touchscreen/touch5/press,/Simulated Touchscreen/touch6/press,/Simulated
+      Touchscreen/touch7/press,/Simulated Touchscreen/touch8/press,/Simulated Touchscreen/touch9/press]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c614b8b4-e18f-437f-827b-c994bf814b54
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 146156d5-bfa1-4e67-9a0f-06c4d8248912
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a705d8cb-7c45-4879-b5d0-4e24127bf7cd
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0b35209e-402c-489e-85a7-fdcc5612257c
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 53deef56-1c00-45fd-82e2-7e73ae767cd4
+    m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2738a935-b926-4676-bea3-6d9cc69fbcef
+    m_ActionName: UI/Touch[/Simulated Touchscreen/primaryTouch/position]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &3133418425233460443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094918606176732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f271c799ad7d4d729780b4ae3b48a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axleInfos:
+  - leftWheel: {fileID: 816782349639831320}
+    rightWheel: {fileID: 4426735923073316806}
+    motor: 0
+    steering: 1
+  - leftWheel: {fileID: 7248535707972732119}
+    rightWheel: {fileID: 2679956219602886236}
+    motor: 1
+    steering: 0
+  maxMotorTorque: 500
+  maxSteeringAngle: 15
 --- !u!1 &1105226973929536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4051323090461046}
+  - component: {fileID: 4426735923073316806}
   m_Layer: 0
   m_Name: SportCar20_WheelHubFrontRight
   m_TagString: Untagged
@@ -1296,6 +1428,36 @@ Transform:
   m_Father: {fileID: 4069157593635050}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &4426735923073316806
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277186078830448}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5
+  m_SuspensionSpring:
+    spring: 35000
+    damper: 4500
+    targetPosition: 0.5
+  m_SuspensionDistance: 0.3
+  m_ForceAppPointDistance: 0
+  m_Mass: 20
+  m_WheelDampingRate: 0.25
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.4
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 1
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.5
+    m_AsymptoteValue: 0.75
+    m_Stiffness: 1
+  m_Enabled: 1
 --- !u!1 &1285288043895298
 GameObject:
   m_ObjectHideFlags: 0
@@ -3166,6 +3328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4443432132136842}
+  - component: {fileID: 7248535707972732119}
   m_Layer: 0
   m_Name: SportCar20_WheelHubRearLeft
   m_TagString: Untagged
@@ -3187,6 +3350,36 @@ Transform:
   m_Father: {fileID: 4069157593635050}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &7248535707972732119
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689803505383524}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5
+  m_SuspensionSpring:
+    spring: 35000
+    damper: 4500
+    targetPosition: 0.5
+  m_SuspensionDistance: 0.3
+  m_ForceAppPointDistance: 0
+  m_Mass: 20
+  m_WheelDampingRate: 0.25
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.4
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 1
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.5
+    m_AsymptoteValue: 0.75
+    m_Stiffness: 1
+  m_Enabled: 1
 --- !u!1 &1701420005931974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,6 +3389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4837067562645112}
+  - component: {fileID: 816782349639831320}
   m_Layer: 0
   m_Name: SportCar20_WheelHubFrontLeft
   m_TagString: Untagged
@@ -3217,6 +3411,36 @@ Transform:
   m_Father: {fileID: 4069157593635050}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &816782349639831320
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701420005931974}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5
+  m_SuspensionSpring:
+    spring: 35000
+    damper: 4500
+    targetPosition: 0.5
+  m_SuspensionDistance: 0.3
+  m_ForceAppPointDistance: 0
+  m_Mass: 20
+  m_WheelDampingRate: 0.25
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.4
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 1
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.5
+    m_AsymptoteValue: 0.75
+    m_Stiffness: 1
+  m_Enabled: 1
 --- !u!1 &1709673454088864
 GameObject:
   m_ObjectHideFlags: 0
@@ -4980,6 +5204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4207580152465176}
+  - component: {fileID: 2679956219602886236}
   m_Layer: 0
   m_Name: SportCar20_WheelHubRearRight
   m_TagString: Untagged
@@ -5001,6 +5226,36 @@ Transform:
   m_Father: {fileID: 4069157593635050}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &2679956219602886236
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901566623674404}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5
+  m_SuspensionSpring:
+    spring: 35000
+    damper: 4500
+    targetPosition: 0.5
+  m_SuspensionDistance: 0.3
+  m_ForceAppPointDistance: 0
+  m_Mass: 20
+  m_WheelDampingRate: 0.25
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.4
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 1
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.5
+    m_AsymptoteValue: 0.75
+    m_Stiffness: 1
+  m_Enabled: 1
 --- !u!1 &1948355173295162
 GameObject:
   m_ObjectHideFlags: 0
