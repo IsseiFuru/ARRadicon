@@ -7,7 +7,7 @@ using UnityEngine.XR.ARSubsystems;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// 平面を検知して、タップした位置に球を表示させる
+/// 平面を検知して、タップした位置に物体を表示させる
 /// </summary>
 namespace ARradicon
 {
@@ -58,7 +58,7 @@ namespace ARradicon
                 isReady = true;
                 ShowMessage("平面検出");
                 AddMessage("床を撮影してください。しばらくすると平面が検出されます。" +
-                    "平面をタップすると椅子が表示されます。");
+                    "平面をタップすると車が表示されます。");
             }
         }
 
@@ -81,7 +81,7 @@ namespace ARradicon
                 if (instantiatedObject == null)
                 {
                     instantiatedObject = Instantiate(placementPrefab, hitPose.position, hitPose.rotation);
-                    AddMessage("Appear ball!!");
+                    AddMessage("Appear car!!");
                 }
                 else {
                     instantiatedObject.transform.position = hitPose.position;

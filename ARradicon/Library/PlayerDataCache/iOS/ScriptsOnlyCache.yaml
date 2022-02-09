@@ -2,18 +2,21 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ARradicon.AppearOnPlane
+    - ARradicon.Car
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.Editor.InputDebuggerWindow
+    - UnityEngine.InputSystem.Editor.InputDeviceDebuggerWindow
+    - UnityEngine.InputSystem.EnhancedTouch.TouchSimulation
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.OnScreen.OnScreenStick
     - UnityEngine.InputSystem.PlayerInput
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
     Unity.XR.ARFoundation.dll:
     - UnityEngine.XR.ARFoundation.ARCameraBackground
     - UnityEngine.XR.ARFoundation.ARCameraManager
@@ -46,6 +49,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/BaseScene.unity:
@@ -78,54 +82,60 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1498}
+      Script: {instanceID: 1460}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1502}
     - Class: 114
-      Script: {instanceID: 1662}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2350}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 2966}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 2968}
     - Class: 114
-      Script: {instanceID: 3916}
+      Script: {instanceID: 3218}
     - Class: 114
-      Script: {instanceID: 3926}
+      Script: {instanceID: 3920}
     - Class: 114
-      Script: {instanceID: 4046}
+      Script: {instanceID: 3930}
     - Class: 114
-      Script: {instanceID: 4490}
+      Script: {instanceID: 4050}
     - Class: 114
-      Script: {instanceID: 4572}
+      Script: {instanceID: 4494}
     - Class: 114
-      Script: {instanceID: 4594}
+      Script: {instanceID: 4576}
     - Class: 114
-      Script: {instanceID: 4596}
+      Script: {instanceID: 4598}
     - Class: 114
-      Script: {instanceID: 4958}
+      Script: {instanceID: 4600}
     - Class: 114
-      Script: {instanceID: 5034}
+      Script: {instanceID: 4964}
     - Class: 114
-      Script: {instanceID: 5610}
+      Script: {instanceID: 5040}
     - Class: 114
-      Script: {instanceID: 5826}
+      Script: {instanceID: 5192}
     - Class: 114
-      Script: {instanceID: 17984}
+      Script: {instanceID: 5500}
+    - Class: 114
+      Script: {instanceID: 5614}
+    - Class: 114
+      Script: {instanceID: 5620}
+    - Class: 114
+      Script: {instanceID: 5836}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
     - Class: 137
+      Script: {instanceID: 0}
+    - Class: 146
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -139,7 +149,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: 24c74cc0d527a06113f2b967042769f0
@@ -164,12 +184,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.UI
     className: BaseInputOverride
-  - hash:
-      serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: c24a778d9aa393e11e54bff320ca63de
@@ -458,6 +472,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InputTest
   - hash:
       serializedVersion: 2
       Hash: 1f880cc188f7f5eb5592d4bf4f57fef5
@@ -862,7 +882,7 @@ ScriptsOnlyBuild:
     className: DeviceBasedSnapTurnProvider
   - hash:
       serializedVersion: 2
-      Hash: da582d98ca3927dc62f0e96e967a4a74
+      Hash: 6943f561490fef37d732dae57a12c18d
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: InputSettings
@@ -1042,6 +1062,12 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
+      Hash: 5518600f5ca24a6ccaa601f88d277a9d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: ARradicon
+    className: AppearOnPlane
+  - hash:
+      serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1136,6 +1162,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 54e99a87e612af8c9086d793dc4485e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: ARradicon
+    className: Car
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1244,13 +1276,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.UI
     className: XRUIInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 5518600f5ca24a6ccaa601f88d277a9d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: ARradicon
-    className: AppearOnPlane
   platform: 9
   scenePathNames:
   - Assets/Scenes/BaseScene.unity
-  playerPath: /Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/iOSApps/1.2
+  playerPath: /Users/furutaniissei/UnityProjects/iOSApps
