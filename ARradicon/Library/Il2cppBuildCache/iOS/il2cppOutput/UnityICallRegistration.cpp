@@ -430,6 +430,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_CanvasGroup_set_alpha();
 		Register_UnityEngine_CanvasGroup_set_alpha();
 
+		//System.Void UnityEngine.CanvasGroup::set_interactable(System.Boolean)
+		void Register_UnityEngine_CanvasGroup_set_interactable();
+		Register_UnityEngine_CanvasGroup_set_interactable();
+
 	//End Registrations for type : UnityEngine.CanvasGroup
 
 	//Start Registrations for type : UnityEngine.CanvasRenderer
@@ -1654,6 +1658,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_PhysicsScene2D_RaycastList_Internal_Injected();
 		Register_UnityEngine_PhysicsScene2D_RaycastList_Internal_Injected();
 
+		//System.Void UnityEngine.PhysicsScene2D::GetRayIntersection_Internal_Injected(UnityEngine.PhysicsScene2D&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.RaycastHit2D&)
+		void Register_UnityEngine_PhysicsScene2D_GetRayIntersection_Internal_Injected();
+		Register_UnityEngine_PhysicsScene2D_GetRayIntersection_Internal_Injected();
+
 		//System.Void UnityEngine.PhysicsScene2D::Raycast_Internal_Injected(UnityEngine.PhysicsScene2D&,UnityEngine.Vector2&,UnityEngine.Vector2&,System.Single,UnityEngine.ContactFilter2D&,UnityEngine.RaycastHit2D&)
 		void Register_UnityEngine_PhysicsScene2D_Raycast_Internal_Injected();
 		Register_UnityEngine_PhysicsScene2D_Raycast_Internal_Injected();
@@ -2815,6 +2823,18 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_UnityLogWriter_WriteStringToUnityLogImpl();
 
 	//End Registrations for type : UnityEngine.UnityLogWriter
+
+	//Start Registrations for type : UnityEngine.WheelCollider
+
+		//System.Void UnityEngine.WheelCollider::set_motorTorque(System.Single)
+		void Register_UnityEngine_WheelCollider_set_motorTorque();
+		Register_UnityEngine_WheelCollider_set_motorTorque();
+
+		//System.Void UnityEngine.WheelCollider::set_steerAngle(System.Single)
+		void Register_UnityEngine_WheelCollider_set_steerAngle();
+		Register_UnityEngine_WheelCollider_set_steerAngle();
+
+	//End Registrations for type : UnityEngine.WheelCollider
 
 	//Start Registrations for type : UnityEngine.XR.InputDevices
 
