@@ -23,24 +23,14 @@ namespace ARradicon
         public void OnMove(InputAction.CallbackContext context)
         {
             var axis = context.ReadValue<Vector2>();
-            Debug.Log(maxMotorTorque+ ","+ axis.x);
-            //_velocity = new Vector3(axis.x, 0, axis.y);
+            Debug.Log(maxMotorTorque+ ","+ axis.x);          
             motor = maxMotorTorque * axis.y;
-            steering = maxSteeringAngle * axis.x;
-            //var x =Input.GetAxis("Vertical");
-            //Debug.Log("Axisx"+x);
-            //Debug.Log("mortor"+motor);
-            //Debug.Log("ster"+steering);
-
-            ///// <summary>
-            ///// 
-            ///// </summary>
-            //void Update()
-            //{
-            //    //const float Speed = 1f;
-            //    transform.position += Speed * _velocity * Time.deltaTime;
-            //}
+            steering = maxSteeringAngle * axis.x;        
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public void FixedUpdate()
         {
             foreach (AxleInfo axleInfo in axleInfos)
