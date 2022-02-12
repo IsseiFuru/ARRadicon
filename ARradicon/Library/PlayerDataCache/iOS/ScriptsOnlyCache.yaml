@@ -3,14 +3,15 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ARradicon.AppearOnPlane
     - ARradicon.Car
+    - ARradicon.LightEstimation
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.Editor.InputDebuggerWindow
-    - UnityEngine.InputSystem.Editor.InputDeviceDebuggerWindow
     - UnityEngine.InputSystem.EnhancedTouch.TouchSimulation
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.OnScreen.OnScreenButton
     - UnityEngine.InputSystem.OnScreen.OnScreenStick
     - UnityEngine.InputSystem.PlayerInput
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
@@ -47,6 +48,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -100,6 +102,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3218}
     - Class: 114
+      Script: {instanceID: 3560}
+    - Class: 114
+      Script: {instanceID: 3658}
+    - Class: 114
       Script: {instanceID: 3920}
     - Class: 114
       Script: {instanceID: 3930}
@@ -127,11 +133,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5620}
     - Class: 114
       Script: {instanceID: 5836}
+    - Class: 114
+      Script: {instanceID: 81422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -142,6 +154,8 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 205
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -1062,7 +1076,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 5518600f5ca24a6ccaa601f88d277a9d
+      Hash: 12a0b0d1bcabebf041a1ec02e34377bb
     assemblyName: Assembly-CSharp.dll
     namespaceName: ARradicon
     className: AppearOnPlane
@@ -1276,7 +1290,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.UI
     className: XRUIInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 2c6e69f5f209610885f1696f97fcf748
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: ARradicon
+    className: LightEstimation
   platform: 9
   scenePathNames:
   - Assets/Scenes/BaseScene.unity
-  playerPath: /Users/furutaniissei/UnityProjects/iOSApps/1.7
+  playerPath: /Users/furutaniissei/UnityProjects/iOSApps/ver0.6

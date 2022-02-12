@@ -5,9 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.EnhancedTouch;
-using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
-
 
 /// <summary>
 /// 平面を検知して、タップした位置に物体を表示させる
@@ -20,7 +17,8 @@ namespace ARradicon
 
     public class AppearOnPlane : MonoBehaviour
     {
-        [SerializeField] Text message;
+        [Header("アプリの操作説明")] [SerializeField] Text message;
+        [Header("タッチした場所")] [SerializeField] Text debugPosition;
         [SerializeField] GameObject placementPrefab;
         ARPlaneManager planeManager;
         ARRaycastManager raycastManager;
@@ -32,6 +30,7 @@ namespace ARradicon
         /// </summary>
         /// <param name="text"></param>
         void ShowMessage(string text) { message.text = $"{text}\r\n"; }
+        void ShowDebug(string text) { debugPosition.text = $"{text}\r\n"; }
 
         /// <summary>
         /// テキストを追加させる
@@ -59,7 +58,7 @@ namespace ARradicon
             else
             {
                 isReady = true;
-                ShowMessage("平面検出");
+                ShowMessage("ARradicon");
                 AddMessage("床を撮影してください。しばらくすると平面が検出されます。" +
                     "平面をタップすると車が表示されます。");
             }
@@ -77,17 +76,16 @@ namespace ARradicon
             if (!isReady) { return; }
 
             var touchPosition = touchInfo.Get<Vector2>();
-            ShowMessage($"Position {touchPosition}");
-            if (touchPosition.y >= 1000)
+            ShowDebug($"Position {touchPosition}");
+            if (touchPosition.y >= 900)
             {
                 var hits = new List<ARRaycastHit>();
-                if (raycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinInfinity))
+                if (raycastManager.Raycast(touchPosition, hits, TrackableType.PlaneEstimated))
                 {
                     var hitPose = hits[0].pose;
                     if (instantiatedObject == null)
                     {
                         instantiatedObject = Instantiate(placementPrefab, hitPose.position, hitPose.rotation);
-                        AddMessage("Appear car!!");
                     }
                     else
                     {
@@ -96,25 +94,5 @@ namespace ARradicon
                 }
             }
         }
-
-        void OnEnable()
-        {
-            EnhancedTouchSupport.Enable();
-        }
-
-        void OnDisable()
-        {
-            EnhancedTouchSupport.Disable();
-        }
-
-        //void OnGUI()
-        //{
-
-        //    foreach (var touch in Touch.activeTouches)
-        //    {
-                    //ShowMessage( $"Touch: Id {touch.touchId} Position {touch.screenPosition} Phase {touch.phase}\n");
-        //    }
-
-        //}
     }
 }

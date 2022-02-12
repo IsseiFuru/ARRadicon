@@ -458,6 +458,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 2738a935-b926-4676-bea3-6d9cc69fbcef
     m_ActionName: UI/Touch[/Simulated Touchscreen/primaryTouch/position]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3133418425233460443}
+        m_TargetAssemblyTypeName: ARradicon.Car, Assembly-CSharp
+        m_MethodName: onReset
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: abee0352-0311-4828-bb80-8c864e17859e
+    m_ActionName: Player/Reset[/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -484,8 +500,8 @@ MonoBehaviour:
     rightWheel: {fileID: 2679956219602886236}
     motor: 1
     steering: 0
-  maxMotorTorque: 350
-  maxSteeringAngle: 30
+  maxMotorTorque: 150
+  maxSteeringAngle: 45
 --- !u!1 &1105226973929536
 GameObject:
   m_ObjectHideFlags: 0
