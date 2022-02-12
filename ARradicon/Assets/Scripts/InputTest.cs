@@ -17,7 +17,7 @@ public class InputTest : MonoBehaviour
 
     private void ClickFire(InputAction.CallbackContext context)
     {
-        Debug.Log("Fire!");
+        //Debug.Log("Fire!");
     }
 
 

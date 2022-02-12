@@ -5,12 +5,12 @@ ScriptsOnlyBuild:
     - ARradicon.Car
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.Editor.InputDebuggerWindow
-    - UnityEngine.InputSystem.Editor.InputDeviceDebuggerWindow
     - UnityEngine.InputSystem.EnhancedTouch.TouchSimulation
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.OnScreen.OnScreenButton
     - UnityEngine.InputSystem.OnScreen.OnScreenStick
     - UnityEngine.InputSystem.PlayerInput
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
@@ -47,6 +47,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -100,6 +101,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3218}
     - Class: 114
+      Script: {instanceID: 3560}
+    - Class: 114
+      Script: {instanceID: 3658}
+    - Class: 114
       Script: {instanceID: 3920}
     - Class: 114
       Script: {instanceID: 3930}
@@ -142,6 +147,8 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 205
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -1062,7 +1069,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 5518600f5ca24a6ccaa601f88d277a9d
+      Hash: 12a0b0d1bcabebf041a1ec02e34377bb
     assemblyName: Assembly-CSharp.dll
     namespaceName: ARradicon
     className: AppearOnPlane
@@ -1279,4 +1286,4 @@ ScriptsOnlyBuild:
   platform: 9
   scenePathNames:
   - Assets/Scenes/BaseScene.unity
-  playerPath: /Users/furutaniissei/UnityProjects/iOSApps/1.7
+  playerPath: /Users/furutaniissei/UnityProjects/iOSApps/0.5

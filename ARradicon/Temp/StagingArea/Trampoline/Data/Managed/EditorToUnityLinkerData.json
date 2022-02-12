@@ -352,6 +352,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Sprite",
+            "fullManagedTypeName": "UnityEngine.Sprite",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/BaseScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "RenderSettings",
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
@@ -509,13 +518,6 @@
         {
             "managedAssemblyName": "Unity.InputSystem.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.InputSystem.Editor.InputDeviceDebuggerWindow",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.InputSystem.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.InputSystem.EnhancedTouch.TouchSimulation",
             "moduleName": "",
             "usedInScenes": []
@@ -545,6 +547,13 @@
             "managedAssemblyName": "Unity.InputSystem.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.InputSystem.InputSystemObject",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.OnScreen.OnScreenButton",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -678,6 +687,13 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.EventSystems.EventSystem",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Button",
             "moduleName": "",
             "usedInScenes": []
         },

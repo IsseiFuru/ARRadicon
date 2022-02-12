@@ -22,26 +22,26 @@ extern void InputTest_Update_m85BAC29474F1373778687930785C1164660BF79D (void);
 extern void InputTest__ctor_m1B161E458ABE4DA0B8287048EE7888F98C1F8906 (void);
 // 0x00000005 System.Void ARradicon.AppearOnPlane::ShowMessage(System.String)
 extern void AppearOnPlane_ShowMessage_mF2203FB2639F2ACE6ADB5DF0023A58DF0A855F7B (void);
-// 0x00000006 System.Void ARradicon.AppearOnPlane::AddMessage(System.String)
+// 0x00000006 System.Void ARradicon.AppearOnPlane::ShowDebug(System.String)
+extern void AppearOnPlane_ShowDebug_m5BAEE040A9C96260C279A2D21E91A29A6537E569 (void);
+// 0x00000007 System.Void ARradicon.AppearOnPlane::AddMessage(System.String)
 extern void AppearOnPlane_AddMessage_m74675B14474B99EE975B9C26FA3A94ECCCA59B02 (void);
-// 0x00000007 System.Void ARradicon.AppearOnPlane::Awake()
+// 0x00000008 System.Void ARradicon.AppearOnPlane::Awake()
 extern void AppearOnPlane_Awake_m271EB52CA895CEE7E8CDBDA90533D99F4D2BBFD2 (void);
-// 0x00000008 System.Void ARradicon.AppearOnPlane::OnTouch(UnityEngine.InputSystem.InputValue)
+// 0x00000009 System.Void ARradicon.AppearOnPlane::OnTouch(UnityEngine.InputSystem.InputValue)
 extern void AppearOnPlane_OnTouch_m31473152EC00BEE3EB0C827156000E6220B921F3 (void);
-// 0x00000009 System.Void ARradicon.AppearOnPlane::OnEnable()
-extern void AppearOnPlane_OnEnable_mD65B62DA87F76B8E1B5502F911C3112BDB80208F (void);
-// 0x0000000A System.Void ARradicon.AppearOnPlane::OnDisable()
-extern void AppearOnPlane_OnDisable_mE662B49D06FCBFD8EAEA4CD9B4AE93FC5F538F37 (void);
-// 0x0000000B System.Void ARradicon.AppearOnPlane::.ctor()
+// 0x0000000A System.Void ARradicon.AppearOnPlane::.ctor()
 extern void AppearOnPlane__ctor_mECEC7718F2FD3441F82F81332908FF251CC5D1B3 (void);
-// 0x0000000C System.Void ARradicon.Car::OnMove(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x0000000B System.Void ARradicon.Car::OnMove(UnityEngine.InputSystem.InputAction/CallbackContext)
 extern void Car_OnMove_m96BF1E5A87F69938B10256D7B2CFD089A28C4CD5 (void);
+// 0x0000000C System.Void ARradicon.Car::OnReset()
+extern void Car_OnReset_m98960499637F06F8772BBB4DE7FD63ECC7B0356C (void);
 // 0x0000000D System.Void ARradicon.Car::FixedUpdate()
 extern void Car_FixedUpdate_m98F158FE70E18D0F7626EF0AF064212D94CA84FA (void);
 // 0x0000000E System.Void ARradicon.Car::.ctor()
 extern void Car__ctor_m4D0E52F98BC45A9A8EBFD3377D52F688F8AB0C6E (void);
-// 0x0000000F System.Void ARradicon.AxleInfo::.ctor()
-extern void AxleInfo__ctor_m9732E53353E8B0A9250D4563A2B9D3BB423838A8 (void);
+// 0x0000000F System.Void ARradicon.Car/AxleInfo::.ctor()
+extern void AxleInfo__ctor_m8F020C945A2165B93DA540C7441D56AA9D1BA086 (void);
 static Il2CppMethodPointer s_methodPointers[15] = 
 {
 	InputTest_Start_m64FC2E84A89C61166D5F0147A2DF1DECFA0B1713,
@@ -49,16 +49,16 @@ static Il2CppMethodPointer s_methodPointers[15] =
 	InputTest_Update_m85BAC29474F1373778687930785C1164660BF79D,
 	InputTest__ctor_m1B161E458ABE4DA0B8287048EE7888F98C1F8906,
 	AppearOnPlane_ShowMessage_mF2203FB2639F2ACE6ADB5DF0023A58DF0A855F7B,
+	AppearOnPlane_ShowDebug_m5BAEE040A9C96260C279A2D21E91A29A6537E569,
 	AppearOnPlane_AddMessage_m74675B14474B99EE975B9C26FA3A94ECCCA59B02,
 	AppearOnPlane_Awake_m271EB52CA895CEE7E8CDBDA90533D99F4D2BBFD2,
 	AppearOnPlane_OnTouch_m31473152EC00BEE3EB0C827156000E6220B921F3,
-	AppearOnPlane_OnEnable_mD65B62DA87F76B8E1B5502F911C3112BDB80208F,
-	AppearOnPlane_OnDisable_mE662B49D06FCBFD8EAEA4CD9B4AE93FC5F538F37,
 	AppearOnPlane__ctor_mECEC7718F2FD3441F82F81332908FF251CC5D1B3,
 	Car_OnMove_m96BF1E5A87F69938B10256D7B2CFD089A28C4CD5,
+	Car_OnReset_m98960499637F06F8772BBB4DE7FD63ECC7B0356C,
 	Car_FixedUpdate_m98F158FE70E18D0F7626EF0AF064212D94CA84FA,
 	Car__ctor_m4D0E52F98BC45A9A8EBFD3377D52F688F8AB0C6E,
-	AxleInfo__ctor_m9732E53353E8B0A9250D4563A2B9D3BB423838A8,
+	AxleInfo__ctor_m8F020C945A2165B93DA540C7441D56AA9D1BA086,
 };
 static const int32_t s_InvokerIndices[15] = 
 {
@@ -68,12 +68,12 @@ static const int32_t s_InvokerIndices[15] =
 	3302,
 	2644,
 	2644,
+	2644,
 	3302,
 	2644,
 	3302,
-	3302,
-	3302,
 	2722,
+	3302,
 	3302,
 	3302,
 	3302,
