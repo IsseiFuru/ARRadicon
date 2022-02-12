@@ -5,9 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.EnhancedTouch;
-using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
-
 
 /// <summary>
 /// 平面を検知して、タップした位置に物体を表示させる
@@ -80,7 +77,7 @@ namespace ARradicon
 
             var touchPosition = touchInfo.Get<Vector2>();
             ShowDebug($"Position {touchPosition}");
-            if (touchPosition.y >= 1000)
+            if (touchPosition.y >= 900)
             {
                 var hits = new List<ARRaycastHit>();
                 if (raycastManager.Raycast(touchPosition, hits, TrackableType.PlaneEstimated))

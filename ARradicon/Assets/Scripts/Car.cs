@@ -49,9 +49,12 @@ namespace ARradicon
         {
             var Cam = Camera.main.gameObject;
             Debug.Log("Press:R or Buttrn");
-            this.transform.rotation = Quaternion.Euler(Cam.transform.localEulerAngles.x,0, Cam.transform.localEulerAngles.z);
+            this.transform.rotation = Quaternion.Euler(0, Cam.transform.localEulerAngles.y, 0);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void FixedUpdate()
         {
             var keybord = Keyboard.current;

@@ -42,7 +42,19 @@ extern void Car_FixedUpdate_m98F158FE70E18D0F7626EF0AF064212D94CA84FA (void);
 extern void Car__ctor_m4D0E52F98BC45A9A8EBFD3377D52F688F8AB0C6E (void);
 // 0x0000000F System.Void ARradicon.Car/AxleInfo::.ctor()
 extern void AxleInfo__ctor_m8F020C945A2165B93DA540C7441D56AA9D1BA086 (void);
-static Il2CppMethodPointer s_methodPointers[15] = 
+// 0x00000010 System.Void ARradicon.LightEstimation::Awake()
+extern void LightEstimation_Awake_mCBEB57176CE490BBFBB1D45713050A8FEF39E418 (void);
+// 0x00000011 System.Void ARradicon.LightEstimation::OnEnable()
+extern void LightEstimation_OnEnable_mE22220E7D717BB644EBDB4F1FA36B56FA36D7156 (void);
+// 0x00000012 System.Void ARradicon.LightEstimation::OnDisable()
+extern void LightEstimation_OnDisable_m50477059EBFDB57D86763ACDDA6D67C6D24B2E0C (void);
+// 0x00000013 System.Void ARradicon.LightEstimation::OnBeforeRender()
+extern void LightEstimation_OnBeforeRender_m6DADDA96DA6D4CD2027C53D3287B1EBF32F6E8DD (void);
+// 0x00000014 System.Void ARradicon.LightEstimation::FrameChanged(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
+extern void LightEstimation_FrameChanged_m5943C3759F72B6F6D3C7A0B36BDF6336FC8A205E (void);
+// 0x00000015 System.Void ARradicon.LightEstimation::.ctor()
+extern void LightEstimation__ctor_m217EDDFE9FB38BF76C34AA3BC3B9006CACFCB1B1 (void);
+static Il2CppMethodPointer s_methodPointers[21] = 
 {
 	InputTest_Start_m64FC2E84A89C61166D5F0147A2DF1DECFA0B1713,
 	InputTest_ClickFire_m60BC238D442415E6EF085AE526E985801DA7F0EF,
@@ -59,8 +71,14 @@ static Il2CppMethodPointer s_methodPointers[15] =
 	Car_FixedUpdate_m98F158FE70E18D0F7626EF0AF064212D94CA84FA,
 	Car__ctor_m4D0E52F98BC45A9A8EBFD3377D52F688F8AB0C6E,
 	AxleInfo__ctor_m8F020C945A2165B93DA540C7441D56AA9D1BA086,
+	LightEstimation_Awake_mCBEB57176CE490BBFBB1D45713050A8FEF39E418,
+	LightEstimation_OnEnable_mE22220E7D717BB644EBDB4F1FA36B56FA36D7156,
+	LightEstimation_OnDisable_m50477059EBFDB57D86763ACDDA6D67C6D24B2E0C,
+	LightEstimation_OnBeforeRender_m6DADDA96DA6D4CD2027C53D3287B1EBF32F6E8DD,
+	LightEstimation_FrameChanged_m5943C3759F72B6F6D3C7A0B36BDF6336FC8A205E,
+	LightEstimation__ctor_m217EDDFE9FB38BF76C34AA3BC3B9006CACFCB1B1,
 };
-static const int32_t s_InvokerIndices[15] = 
+static const int32_t s_InvokerIndices[21] = 
 {
 	3302,
 	2722,
@@ -76,6 +94,12 @@ static const int32_t s_InvokerIndices[15] =
 	3302,
 	3302,
 	3302,
+	3302,
+	3302,
+	3302,
+	3302,
+	3302,
+	2553,
 	3302,
 };
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
@@ -83,7 +107,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	15,
+	21,
 	s_methodPointers,
 	0,
 	NULL,

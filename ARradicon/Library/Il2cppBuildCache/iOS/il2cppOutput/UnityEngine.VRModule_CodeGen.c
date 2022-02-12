@@ -28,7 +28,7 @@ static const int32_t s_InvokerIndices[3] =
 {
 	4727,
 	5123,
-	5230,
+	5231,
 };
 extern const CustomAttributesCacheGenerator g_UnityEngine_VRModule_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
