@@ -1,11 +1,18 @@
+/***
+ * 出現した車を操作するプログラム
+ * Author:Issei Furutani
+ * date:2022/02/12
+ ***/
+
+#pragma warning disable 0649
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
 
 namespace ARradicon
 {
     [RequireComponent(typeof(PlayerInput))]
+
 
     public class Car : MonoBehaviour
     {
@@ -15,10 +22,9 @@ namespace ARradicon
         [Header("最高操舵角度")] [SerializeField] float maxSteeringAngle;
         float motor = 0;
         float steering = 0;
-        //public bool isReset = false;
 
         /// <summary>
-        /// 
+        /// 車のタイヤを入れるためのクラス
         /// </summary>
         [System.Serializable]
         public class AxleInfo
@@ -43,7 +49,7 @@ namespace ARradicon
         }
 
         /// <summary>
-        /// リセットボタンを押した時、車の姿勢が初期状態に戻る。
+        /// リセットボタンを押した時、車がカメラの向いた方向になる。
         /// </summary>
         public void OnReset()
         {
@@ -53,7 +59,7 @@ namespace ARradicon
         }
 
         /// <summary>
-        /// 
+        /// 車を動かす
         /// </summary>
         public void FixedUpdate()
         {

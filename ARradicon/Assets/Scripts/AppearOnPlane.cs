@@ -1,3 +1,9 @@
+/***
+ * 平面検出を行い、検出した場所にタップすると物体が出現するプログラム
+ * Author:Issei Furutani
+ * date:2022/02/13
+ ***/
+
 #pragma warning disable 0649
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,15 +12,16 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.InputSystem;
 
-/// <summary>
-/// 平面を検知して、タップした位置に物体を表示させる
-/// </summary>
+
 namespace ARradicon
 {
     [RequireComponent(typeof(ARPlaneManager))]
     [RequireComponent(typeof(ARRaycastManager))]
     [RequireComponent(typeof(PlayerInput))]
 
+    /// <summary>
+    /// 平面を検知して、タップした位置に物体を表示させる
+    /// </summary>
     public class AppearOnPlane : MonoBehaviour
     {
         [Header("アプリの操作説明")] [SerializeField] Text message;
@@ -38,9 +45,6 @@ namespace ARradicon
         /// <param name="text"></param>
         void AddMessage(string text) { message.text += $"{text}\r\n"; }
 
-        /// <summary>
-        /// 
-        /// </summary>
         private void Awake()
         {
             if (message == null) { Application.Quit(); }
@@ -58,9 +62,9 @@ namespace ARradicon
             else
             {
                 isReady = true;
-                ShowMessage("ARradicon");
-                AddMessage("床を撮影してください。しばらくすると平面が検出されます。" +
-                    "平面をタップすると車が表示されます。");
+                //ShowMessage("ARradicon");
+                //AddMessage("床を撮影してください。しばらくすると平面が検出されます。" +
+                    //"平面をタップすると車が表示されます。");
             }
         }
 
@@ -68,7 +72,7 @@ namespace ARradicon
 
         /// <summary>
         /// アクションマップに登録されているTouchが生じた時に呼び出される。
-        /// 平面上にタップした場所に球を表示させる。
+        /// 平面上にタップした場所に仮想物体を表示させる。
         /// </summary>
         /// <param name="touchInfo"></param>
         void OnTouch(InputValue touchInfo)
@@ -76,7 +80,7 @@ namespace ARradicon
             if (!isReady) { return; }
 
             var touchPosition = touchInfo.Get<Vector2>();
-            ShowDebug($"Position {touchPosition}");
+            //ShowDebug($"Position {touchPosition}");
             if (touchPosition.y >= 900)
             {
                 var hits = new List<ARRaycastHit>();

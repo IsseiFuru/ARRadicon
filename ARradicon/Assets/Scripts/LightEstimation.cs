@@ -1,3 +1,9 @@
+/***
+ * 現実世界の光源を認識し、仮想物体に相応の影を付与するプログラム
+ * Author:Issei Furutani
+ * date:2022/02/12
+ ***/
+
 #pragma warning disable 0649
 using UnityEngine;
 using UnityEngine.UI;
@@ -39,26 +45,14 @@ namespace ARradicon
             if (!isReady) { return; }
 
             cameraManager.frameReceived += FrameChanged;
-            //Application.onBeforeRender += OnBeforeRender;
         }
 
         private void OnDisable()
         {
             if (!isReady) { return; }
 
-            //Application.onBeforeRender -= OnBeforeRender;
             cameraManager.frameReceived -= FrameChanged;
         }
-
-        /// <summary>
-        /// 描画前に、カメラとの位置と向きと表示する仮想物体とカメラの距離メソッド
-        /// </summary>
-        //private void OnBeforeRender()
-        //{
-        //    if(!isReady) { return; }
-
-        //    var cameraTransform = cameraManager.GetComponent<Camera>().transform;
-        //}
 
         /// <summary>
         /// 光源推定の各種値を格納するフィールドなどを宣言している
@@ -75,6 +69,7 @@ namespace ARradicon
         /// カメラフレーム受信時に呼び出されるメソッド
         /// 現実世界の平均的な明るさの値から、推定値を取得する。
         /// </summary>
+        /// <param name="eventArgs"></param>
         void FrameChanged(ARCameraFrameEventArgs eventArgs)
         {
             if (!isReady) { return; }
@@ -94,10 +89,7 @@ namespace ARradicon
             if(mainLightDirection.HasValue)
             {
                 directionalLight.transform.rotation = Quaternion.LookRotation(mainLightDirection.Value);
-                //lightDirectionArrow.transform.rotation = directionalLight.transform.rotation;
-                //lightDirectionArrow.SetActive(true);
             }
-            //else { lightDirectionArrow.SetActive(false); }
 
             mainLightColor = lightEst.mainLightColor;
             if (mainLightColor.HasValue)

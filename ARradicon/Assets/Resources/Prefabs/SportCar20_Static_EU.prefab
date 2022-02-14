@@ -349,7 +349,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094918606176732}
   serializedVersion: 2
-  m_Mass: 375
+  m_Mass: 75
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -462,8 +462,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3133418425233460443}
         m_TargetAssemblyTypeName: ARradicon.Car, Assembly-CSharp
-        m_MethodName: onReset
-        m_Mode: 0
+        m_MethodName: OnReset
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -501,7 +501,7 @@ MonoBehaviour:
     motor: 1
     steering: 0
   maxMotorTorque: 150
-  maxSteeringAngle: 45
+  maxSteeringAngle: 25
 --- !u!1 &1105226973929536
 GameObject:
   m_ObjectHideFlags: 0
