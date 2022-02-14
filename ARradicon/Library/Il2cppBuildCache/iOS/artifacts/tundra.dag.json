@@ -24,6 +24,7 @@
       "Action": "\"/Applications/Unity/Hub/Editor/2020.3.16f1/Unity.app/Contents/il2cpp/build/deploy/netcoreapp3.1/il2cpp\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --additional-cpp=\"/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" --additional-cpp=\"/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" --incremental-g-c-time-slice=3 --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"/Applications/Unity/Hub/Editor/2020.3.16f1/Unity.app/Contents/Tools/MapFileParser/MapFileParser\" --directory=\"/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed\" --generatedcppdir=\"/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Library/Il2cppBuildCache/iOS/il2cppOutput\"",
       "Inputs": [
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed",
+        "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/Assembly-CSharp-firstpass.dll",
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/Mono.Security.dll",
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/System.Configuration.dll",
@@ -38,6 +39,7 @@
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/Unity.XR.CoreUtils.dll",
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/Unity.XR.Interaction.Toolkit.dll",
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll",
+        "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/UnityEngine.AIModule.dll",
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/UnityEngine.ARModule.dll",
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
         "/Users/furutaniissei/UnityProjects/RadiconAR/ARradicon/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
