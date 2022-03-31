@@ -1,6 +1,6 @@
 # RadiconAR
 ## about
-ARラジコン
+スマホアプリ　ARラジコン
 コンセプト「部屋の中をARラジコンが暴れ回る」
 
 ## status
